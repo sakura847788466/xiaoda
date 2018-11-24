@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/gouwche/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/gouwuche.css" />
+    <link rel="stylesheet" type="text/css" href="../css/gouwche/carts.css" />
+    <script type="text/javascript" src="../lib/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="../js/car.js"></script>
+</head>
+<body>
+     <div class="header" id="header"> 
+          <div class="main-container clearfix"> 
+             <div class="tips left"> 
+               <span>Hi,欢迎来到如此生活</span> 
+               <a class="nologin login_link" href=""> 登录 </a>
+               <em class="separator nologin" href="">|</em> 
+               <a href=""> 免费注册 </a>
+               <em class="">|</em> 
+               <a title="关注如此生活 官方微信" href="#"  class="green"><i class="fa fa-weixin fa-lg"><img src="../images/b_3.png" alt="" /></i></a> 
+               <a title="关注如此生活 官方微博" href="#" class="red"><img src="../images/b_2.png"alt="" /><i class="fa fa-weibo  fa-lg"></i></a> 
+            </div> 
+               <div class="nav fr"> 
+                   <div class="dropdown left"> 
+                    <a id="dl_member"  href=""> 我的生活 <span class="caret"></span> </a> 
+                    <ul class="dropdown-menu">
+                     <li><a href="">我的订单</a></li> 
+                     <li><a href="" >星币查询</a></li> 
+                     <li><a href="https://i.soolife.cn/assets/wallet/index.html" target="_blank">余额查询</a></li> 
+                     <li><a href="https://i.soolife.cn/assets/coupon/index.html" target="_blank">我的优惠券</a></li> 
+                    </ul> 
+                   </div> 
+                   <em class="separator left">|</em> 
+                   <div class="left"> 
+                    <a target="_blank" href="https://sop.soolife.cn/">商家入驻</a> 
+                   </div> 
+                   <em class="separator left">|</em> 
+                   <div class="dropdown left"> 
+                    <a id="dl_help" data-target="#" href="https://help.soolife.cn/index.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 帮助中心 <span class="caret"></span> </a> 
+                    <ul class="dropdown-menu" aria-labelledby="dl_help"> 
+                     <li><a href="https://help.soolife.cn/index.html" target="_blank">帮助首页</a></li> 
+                     <!-- <li><a href="https://www.soolife.cn/feedback/index.html" target="_blank">我要投诉</a></li> --> 
+                     <li><a href="https://i.soolife.cn/orders/withdraw/index.html" target="_blank">售后服务</a></li> 
+                    </ul> 
+                   </div> 
+                   <em class="separator left">|</em> 
+                   <div class="dropdown left"> 
+                    <a id="dl_more" data-target="#" href="https://www.soolife.cn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 更多导航 <span class="caret"></span> </a> 
+                    <ul class="dropdown-menu" aria-labelledby="dl_more"> 
+                     <li><a href="https://www.soolife.cn/index.html" target="_blank">首页</a></li> 
+                     <li><a href="https://www.soolife.cn/overseas.html" target="_blank">海外精品</a></li> 
+                     <!--li><a href="https://www.soolife.cn/market.html" target="_blank">星超市</a></li--> 
+                     <li><a href="https://www.soolife.cn/clothes.html" target="_blank">星范儿</a></li> 
+                     <li><a href="https://www.soolife.cn/discount.html" target="_blank">星特惠</a></li> 
+                     <li><a href="https://www.soolife.cn/vip.html" target="_blank">星粉专区</a></li> 
+                    </ul> 
+                   </div> 
+                   <div class="clear"></div> 
+               </div>
+         </div>
+    </div>
+     <div id="nav3">
+                <div class="mainBox">
+                    <div class="leftflo nav1">
+                        <a href="#" class="logo"></a>
+                    </div>
+                    <div class="rightflo nav3">
+                        <div class="flowstep">
+                            <ol>
+                                <li class="step-first">
+                                <div class="step-done">
+                                    <div class="step-name">
+                                        <a href="#">我的购物车</a>
+                                    </div>
+                                    <div class="step-no">
+                                    </div>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="step-name">
+                                    <a href="#">确认订单信息</a>
+                                </div>
+                                <div class="step-no ">
+                                        2
+                                </div>
+                                </li>
+                                <li>
+                                <div class="step-name">
+                                    <a href="#">付款</a>
+                                </div>
+                                <div class="step-no ">
+                                        3
+                                </div>
+                                </li>
+                                <li>
+                                <div class="step-name">
+                                    <a href="#">确认收货</a>
+                                </div>
+                                <div class="step-no ">
+                                        4
+                                </div>
+                                </li>
+                                <li class="step-last">
+                                <div class="step-name">
+                                    <a href="#">评价</a>
+                                </div>
+                                <div class="step-no">
+                                        5
+                                </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+     </div>
+     <!-- 购物车 -->
+       <div>
+          <section class="cartMain" style="padding:10px;">
+                        <div class="cartMain_hd">
+                            <ul class="order_lists cartTop">
+                                <li class="list_chk">
+                                    <!--所有商品全选-->
+                                    <input type="checkbox" id="all" class="whole_check">
+                                    <label for="all"></label>
+                                    全选
+                                </li>
+                                <li class="list_con">商品信息</li>
+                                <li class="list_info">商品参数</li>
+                                <li class="list_price">单价</li>
+                                <li class="list_amount">数量</li>
+                                <li class="list_sum">金额</li>
+                                <li class="list_op">操作</li>
+                            </ul>
+                        </div>
+
+                        <div class="cartBox">
+                            <div class="shop_info">
+                                <div class="all_check">
+                                    <!--店铺全选-->
+                                    <input type="checkbox" id="shop_a" class="shopChoice">
+                                    <label for="shop_a" class="shop"></label>
+                                </div>
+                               <!--  <div class="shop_name">
+                                    店铺：<a href="javascript:;">搜猎人艺术生活</a>
+                                </div> -->
+                            </div>
+                            <div class="order_content">
+                                <ul class="order_lists">
+                                    <li class="list_chk">
+                                        <input type="checkbox" id="checkbox_2" class="son_check">
+                                        <label for="checkbox_2"></label>
+                                    </li>
+                                    <li class="list_con">
+                                        <div class="list_img"></div>
+                                        <div class="list_text"></div>
+                                    </li>
+                                    <li class="list_info">
+                                        <p>规格：默认</p>
+                                        <p>尺寸：16*16*3(cm)</p>
+                                    </li>
+                                    <li class="list_price">
+                                        <!-- <p class="price"></p> -->
+                                    </li>
+                                    <li class="list_amount">
+                                        <div class="amount_box">
+                                            <a href="javascript:;" class="reduce reSty">-</a>
+                                            <input type="text" value="1" class="sum">
+                                            <a href="javascript:;" class="plus">+</a>
+                                        </div>
+                                    </li>
+                                    <li class="list_sum">
+                                        <!-- <p class="sum_price"></p> -->
+                                    </li>
+                                    <li class="list_op">
+                                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--底部-->
+                        <div class="bar-wrapper">
+                            <div class="bar-right">
+                                <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                                <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                                <div class="calBtn"><a href="javascript:;">去结算</a></div>
+                            </div>
+                        </div> 
+        </section>
+            <section class="model_bg"></section>
+            <section class="my_model">
+                <p class="title" style="height:50px;"><span class="closeModel">X</span></p>
+                <p style="font-size:16px;color:red;">您确认要删除该宝贝吗？</p>
+                <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
+            </section> 
+            
+       </div>
+    <!-- 底部推荐===== -->
+        <div class="recommend-bottom">
+                <div class="recommend">
+                    <div class="hot-sale recommend-select">
+                        猜你喜欢
+                    </div>
+                    <div class="record">
+                        最近浏览
+                    </div></div>
+                <div class="hot-sale" style="display:block;">
+                    <div id="switch-content">
+                        <div class="recommend-content swiper-container recently-sale swiper-container-horizontal" style="display:block;">
+                            <ul class="swiper-wrapper" style="width:50000000px;">
+                                <li class="swiper-slide swiper-slide-active" style="width: 235.5px; margin-right: 30px;">
+                                        <div class="recommend-item">
+                                            <a target="_blank" href="#">
+                                            <img width="160" height="160" src="https://d2.soolife.cn/images/ec7e70306b008e933270c5b59125ff27.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="recommend-name">
+                                            <a target="_blank" href="#">MAKOI RYU 丝巾风腰带缎面小黑裙 201712D05 
+                                            </a>
+                                        </div>
+                                        <div class="recommend-price">
+                                            <span>￥1066.00 </span>
+                                            <span></span>
+                                        </div>
+                                        <div class="recommend-btn" data-sku="76475">
+                                            <a><span><i class="icon-shopping-cart"><img src="../images/购物车空.png" height="30" width="30" alt="" /></i></span><span>&nbsp;&nbsp;加入购物车</span>
+                                            </a>
+                                        </div>
+                                </li>
+                                <li class="swiper-slide swiper-slide-next" style="width: 235.5px; margin-right: 30px;">
+                                    <div class="recommend-item">
+                                        <a target="_blank" href="#">
+                                        <img width="160" height="160" src="https://d3.soolife.cn/images/bf2d3a22a8a59ec44df59aee0a408e93.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="recommend-name">
+                                        <a target="_blank" href="#">Danielwellington丹尼尔·惠灵顿 简约皮革表带女士石英表 28mm表盘 
+                                        </a>
+                                    </div>
+                                    <div class="recommend-price">
+                                        <span>￥759.00 </span>
+                                        <span></span>
+                                    </div>
+                                    <div class="recommend-btn" data-sku="79448">
+                                        <a>
+                                        <span><i class="icon-shopping-cart"><img src="../images/购物车空.png" height="30" width="30" alt="" /></i></span><span>&nbsp;&nbsp;加入购物车</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" style="width: 235.5px; margin-right: 30px;">
+                                    <div class="recommend-item">
+                                        <a target="_blank" href="#">
+                                        <img width="160" height="160" src="https://d1.soolife.cn/images/e99daf02697d3680b7263e32c82d8f3f.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="recommend-name">
+                                        <a target="_blank" href="#">瑞士LaPulovce能量瓷感透皙精华30ml 
+                                        </a>    
+                                    </div>
+                                    <div class="recommend-price">
+                                        <span>￥185.00 </span>
+                                        <span></span>
+                                    </div>
+                                    <div class="recommend-btn" data-sku="65911">
+                                        <a><span><i class="icon-shopping-cart"><img src="../images/购物车空.png" height="30" width="30" alt="" /></i></span><span>&nbsp;&nbsp;加入购物车</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" style="width: 235.5px; margin-right: 30px;">
+                                    <div class="recommend-item">
+                                        <a target="_blank" href="#">
+                                        <img width="160" height="160" src="https://d2.soolife.cn/images/26a5c75db32c15f842b042d453166cd3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="recommend-name">
+                                        <a target="_blank" href="#">MAKOI RYU 雪纺丝绒拼接小黑裙 201712D03   
+                                        </a>
+                                    </div>
+                                    <div class="recommend-price">
+                                        <span>￥999.00 </span>
+                                        <span></span>
+                                    </div>
+                                    <div class="recommend-btn" data-sku="76467">
+                                        <a><span><i class="icon-shopping-cart"><img src="../images/购物车空.png" height="30" width="30" alt="" /></i></span><span>&nbsp;&nbsp;加入购物车</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" style="width: 235.5px; margin-right: 30px;">
+                                    <div class="recommend-item">
+                                        <a target="_blank" href="#">
+                                        <img width="160" height="160" src="https://d3.soolife.cn/images/d390a419f1e44a235eb110c3770259e5.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="recommend-name">
+                                        <a target="_blank" href="#">oleana精美真丝绸缎复古褶裥裙100%桑蚕丝 86O
+                                        </a>
+                                    </div>
+                                    <div class="recommend-price">
+                                        <span>￥4410.00 </span>
+                                        <span></span>
+                                    </div>
+                                    <div class="recommend-btn" data-sku="78395">
+                                        <a>
+                                        <span><i class="icon-shopping-cart"><img src="../images/购物车空.png" height="30" width="30" alt="" /></i></span><span>&nbsp;&nbsp;加入购物车</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" style="width: 235.5px; margin-right: 30px;">
+                                    <div class="recommend-item">
+                                        <a target="_blank" href="#">
+                                        <img width="160" height="160" src="https://d3.soolife.cn/images/c36adc171888926c961c5274c205d347.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="recommend-name">
+                                        <a target="_blank" href="#">OPENBOX女装连衣裙115152L 
+                                        </a>
+                                    </div>
+                                    <div class="recommend-price">
+                                        <span>￥209.00 </span>
+                                        <span></span>
+                                    </div>
+                                    <div class="recommend-btn" data-sku="39258">
+                                        <a><span><i class="icon-shopping-cart"></i></span><span>&nbsp;&nbsp;加入购物车</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="swiper-button-next"> </div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="recommend-content swiper-container recently-record swiper-container-horizontal" style="display:none;">
+                            <ul class="swiper-wrapper" style="width: 5e+06px; transition-duration: 0ms;">
+                            </ul>
+                       </div>
+                   </div> </div>
+        </div>
+        <!-- 底部部分    很前面的一样 -->
+         <div class="footerdiv">
+        <div class="footer_wrap">
+          <div class="footer_nav">
+            <ul>
+              <li style="width:285px;">
+              <dl class="footer_nav_first">
+                <dt>新手指南</dt>
+                <dd><a target="_blank" href="#">免费注册</a></dd>
+                <dd><a target="_blank" href="#">搜索商品</a></dd>
+                <dd><a target="_blank" href="#">购买流程</a></dd>
+                <dd><a target="_blank" href="#">评论晒单</a></dd>
+              </dl>
+              </li>
+              <li style="width:182px;">
+              <dl>
+                <dt>配送方式</dt>
+                <dd><a target="_blank" href="#">配送方式</a></dd>
+                <dd><a target="_blank" href="#">配送时间</a></dd>
+              </dl>
+              </li>
+              <li style="width:180px;">
+              <dl>
+                <dt>支付方式</dt>
+                <dd><a target="_blank" href="#">支付宝支付</a></dd>
+                <dd><a target="_blank" href="#">银联卡支付</a></dd>
+              </dl>
+              </li>
+              <li style="width:165px;">
+              <dl>
+                <dt>售后服务</dt>
+                <dd><a target="_blank" href="#">售后政策</a></dd>
+                <dd><a target="_blank" href="#">退款说明</a></dd>
+                <dd><a target="_blank" href="#">取消订单</a></dd>
+              </dl>
+              </li>
+              <li style="width:193px;">
+              <dl>
+                <dt><a href="#" target="_blank" style="font-size:16px;color:#666666;" onmouse="this.style.color=\" red\"="" "="">招商合作</a></dt>
+              </dl>
+              </li>
+              <li style="width:160px;">
+              <dl>
+                <dt>购物指南</dt>
+                <dd><a target="_blank" href="#">星币说明</a></dd>
+                <dd><a target="_blank" href="#">交易条款</a></dd>
+                <dd><a target="_blank" href="#">购物流程</a></dd>
+                <dd><a target="_blank" href="#">注册流程</a></dd>
+                <dd><a target="_blank" href="#">常见问题</a></dd>
+              </dl>
+              </li>
+            </ul>
+            <div class="clear">
+            </div>
+          </div>
+        </div>
+        <div class="foot-s">
+          <div class="mainBox mainBoxim">
+            <a class="s1" title="O2O双线开放" href="#">O2O双线开放</a>
+            <a class="s2" title="免年费返佣金" href="#">免年费 返佣金</a>
+            <a class="s3" title="仓储物流服务" href="#">仓储物流服务</a>
+          </div>
+        </div>
+        <div class="footer">
+          <p>
+            <a href="#" target="_blank"> 关于我们 </a> |
+            <a href="#" target="_blank"> 联系我们 </a> |
+            <!-- <a href="#" target="_blank"> 诚聘英才 </a> | -->
+            <a href="#" target="_blank"> 品牌介绍 </a> |
+            <a href="#" target="_blank"> 商家入驻 </a> |
+            <a href="#" target="_blank"> 友情链接 </a> |
+            <a href="#" target="_blank"> 法律声明 </a>
+          </p>
+          <p style="font-family: Verdana">
+                           © 2014-2015 
+            <a href="#">如此生活</a>  版权所有 沪ICP备11038000号-2
+          </p>
+        </div>
+    </div>
+
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/carts.js"></script>
+
+</body>
+</html>

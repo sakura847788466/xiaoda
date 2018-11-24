@@ -1,0 +1,302 @@
+.l_register .header {
+    height: 100px;
+}
+.l_register .w {
+    width: 990px;
+    margin: 0 auto;
+}
+.l_register .header .logo {
+    background: url(../images/logo.gif) no-repeat;
+}
+
+.l_register .header .logo {
+    width: 200px;
+    height: 60px;
+    float: left;
+    margin-top: 24px;
+}
+.l_register a {
+    text-decoration: none;
+}
+.l_register .header .logo-title {
+    float: left;
+    position: relative;
+    top: 50px;
+    right: 6px;
+}
+/*=====中间部分==============*/
+.l_register .middle {
+    background: url(../images/4.jpg) no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 530px;
+    position: relative;
+}
+.l_register .main_box {
+    position: relative;
+    width: 1200px;
+    height: 530px;
+    margin: 0 auto;
+}
+.l_register .enter_content {
+    width: 360px;
+    background: white;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    padding-bottom: 12px;
+}
+.l_register .enter_content>ul {
+    overflow: hidden;
+    width: 360px;
+    position: relative;
+}
+.l_register .enter_content>ul>li:first-child {
+    width: 100%;
+    height: 50px;
+    background: url(../images/ertyu.png) no-repeat;
+    text-align: center;
+    z-index: 2;
+}
+.l_register .enter_content>ul>li:first-child :active .new_tag2{
+    display:block;
+}
+.l_register .enter_content>ul>li {
+    /* background-color: #Ec6d65; */
+    float: left;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Microsoft YaHei","arial";
+    font-size: 16px;
+    position:relative;
+}
+.btn_move {
+    width: 42px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.btn_move img {
+    width: 30px;
+    height: 30px;
+    margin-top: -8px;
+    position:absolute;
+    top:-36px;
+    right:-309px;
+}
+.new_tag2{
+    display:none;
+}
+.normal_main .ipt {
+    font-size: 14px;
+    width: 307px;
+    height: 40px;
+    line-height: 40px;
+    margin: 18px 0 0 25px;
+    color: #444;
+    text-indent: 37px;
+}
+
+input[type=password], input[type=text] {
+    height: 30px;
+    text-indent: 2px;
+    width: 300px;
+    background-color: #fff;
+    background-image: none;
+    font-size: 12px;
+    border: 1px solid #eee;
+}
+.normal_main .ipt_text_img {
+    position: absolute;
+    top: 124px;
+    left: 30px;
+}
+.normal_main .ipt_password_img {
+    position: absolute;
+    top: 186px;
+    left: 34px;
+}
+.normal_main .ipt_checkbox {
+    font-size: 12px;
+    width: 319px;
+    height: 54px;
+    position: relative;
+    left: 28px;
+    top: 25px;
+    color: #5d5e5f;
+}
+p {
+    margin: 0 0 10px;
+}
+
+.normal_main .ipt_checkbox > a {
+    color: #fd5a85;
+    color: #5d5e5f;
+    text-decoration: none;
+    position: absolute;
+    right: 16px;
+}
+.normal_main .ipt_checkbox > a:hover{
+    color:red;
+    text-decoration: underline;
+}
+.normal_main .ipt_btn {
+    position: relative;
+    left: 25px;
+    width: 310px;
+    height: 40px;
+    border: 0;
+    border-radius: 3px;
+    font-size: 18px;
+    color: white;
+    font-family: "Microsoft YaHei","arial";
+    background: #fd5a85;
+    text-align: center;
+}
+.normal_main .bottom_word {
+    display: block;
+    margin: 25px 0 0 204px;
+    font-size: 12px;
+    height: 19px;
+    color: #5d5e5f;
+}
+.normal_main .bottom_word > a {
+    color: #3EA4E2;
+}
+.normal_main .partner {
+    margin-left: 25px;
+    margin-top: 7px;
+}
+.normal_main .partner span {
+    display: block;
+    color: #4d4d4d;
+    font-size: 14px;
+    font-family: "Microsoft YaHei","arial";
+    margin-bottom: 6px;
+}
+.normal_main .partner>ul>li {
+    float: left;
+    margin-right: 16px;
+    font-size: 14px;
+}
+/*底部样式====================*/
+.footer_wrap {
+    padding: 40px 0 10px;
+    width: 100%;
+}
+
+.footer_nav {
+    background: url(https://static.soolife.cn/asset/img/footer.png) -500px 0 no-repeat;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1200px;
+}
+.footer_nav ul li {
+    float: left;
+}
+.footer_nav .footer_nav_first {
+    padding-left: 98px;
+}
+
+.footer_nav ul li dl {
+    margin: 0;
+}
+.footer_nav dl dt {
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px 0;
+}
+.footer_nav dl dd {
+    color: #999;
+    font-size: 12px;
+    line-height: 22px;
+}
+.footer_nav dl dd a {
+    color: #999;
+    text-decoration: none;
+}
+.footerdiv .foot-s {
+    min-width: 1200px;
+    height: 70px;
+    background: #3B87EE;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 20px 0 35px;
+}
+.mainBoxim {
+    width: 1200px!important;
+}
+.footer .foot-s {
+    min-width: 1200px;
+    height: 70px;
+    background: #3B87EE;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 20px 0 35px;
+}
+.mainBoxim {
+    width: 1200px !important;
+
+}
+.footer .foot-s .s1 {
+    width: 338px;
+    background-position: 0 1px;
+}
+
+.footer .foot-s a {
+    float: left;
+    height: 46px;
+    background: url(https://static.soolife.cn/asset/img/footer.png) no-repeat;
+    text-indent: -100%;
+    overflow: hidden;
+}
+.l_enterIndex a {
+    text-decoration: none;
+}
+
+
+.footer .foot-s .s2 {
+    margin-left: 41px;
+    width: 470px;
+    background-position: 0 -44px;
+}
+.footer .foot-s a {
+    float: left;
+    height: 46px;
+    background: url(https://static.soolife.cn/asset/img/footer.png) no-repeat;
+    text-indent: -100%;
+    overflow: hidden;
+}
+.footer .foot-s .s3 {
+    margin-left: 41px;
+    width: 310px;
+    background-position: 0 -92px;
+}
+
+.footer .foot-s a {
+    float: left;
+    height: 46px;
+    background: url(https://static.soolife.cn/asset/img/footer.png) no-repeat;
+    text-indent: -100%;
+    overflow: hidden;
+}
+.buttom {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 5px 0 20px;
+}
+.buttom p {
+    line-height: 25px;
+    color: #999;
+    font-family: "瀹嬩綋";
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.buttom p a {
+    color: #999;
+}

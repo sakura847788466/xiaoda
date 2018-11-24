@@ -1,0 +1,672 @@
+.nav div{
+    position:relative;
+  }
+  .main-container {
+    margin: 0 auto;
+    width: 1200px !important;
+}
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+     .nav div:hover .dropdown-menu{
+          display:block;
+     }
+     a:hover{
+        color:#f6ab00;
+        text-decoration: underline;
+     }
+ul > li {
+    list-style: outside none none;
+}
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+.header .tips em.separator {
+    color: #999;
+    font-style: normal;
+    line-height: 30px;
+}
+
+.search_bar {
+    height: 100px;
+    z-index: 10;
+    left: -18px;
+    position: relative;
+}
+.search_bar .logo {
+    height: 76px;
+    padding-top: 20px;
+    width: 280px;
+    display: inline;
+}
+.search_bar .logo a.picture {
+    background: rgba(0, 0, 0, 0) url(https://static.soolife.cn/asset/img/logo.gif) no-repeat scroll 0 0;
+    display: block;
+    height: 60px;
+    width: 200px;
+    text-indent: -999em;
+}
+.search_bar .control {
+    position: relative;
+    width: 620px;
+    display: inline;
+}
+.left {
+    float: left;
+}
+   .lj_search {
+    padding-top: 10px;
+    overflow: hidden;
+    margin-bottom: 1px;
+}
+.lj_search .stored {
+    width: 46px;
+    height: 20px;
+    color: #fff;
+    border-radius: 2px;
+    background: #f6ab00;
+    text-align: center;
+    float: left;
+    display: block;
+    padding-left: 0;
+    cursor: pointer;
+    margin-left: 22px;
+}
+.lj_search .shoper {
+    width: 46px;
+    height: 20px;
+    border-radius: 2px;
+    background: #37a0db;
+    color: #fff;
+    text-align: center;
+    display: block;
+    float: left;
+    margin-left: 2px;
+    cursor: pointer;
+}
+.search_bar .control .box {
+    float: right;
+    margin-left: 20px;
+    overflow: hidden;
+    padding-top: 0px;
+    width: 600px;
+}
+.search_bar .control .form-panel {
+    border-color: #37a0db;
+    border-image: none;
+    border-style: solid;
+    border-width: 3px 0 3px 3px;
+    margin: 0;
+}
+.search_bar .control .form-panel fieldset {
+    position: relative;
+}
+
+fieldset {
+    border: 0 none;
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+}
+.search_bar .control .form-panel fieldset .input {
+    background: #fff none repeat scroll 0 0;
+    height: 30px;
+    position: relative;
+}
+.search_bar .control .form-panel fieldset .s-combobox {
+    height: 30px;
+}
+.search_bar .control .form-panel button {
+    background-color: #37a0db;
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    height: 30px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 90px;
+}
+.search_bar .control .form-tags {
+    height: 20px;
+    margin-left: -10px;
+    overflow: hidden;
+    padding: 4px 0 0;
+    width: 100%;
+}
+.search_bar .control .form-tags li {
+    border-left: 1px solid #ccc;
+    display: inline-block;
+    line-height: 1.1;
+    padding: 0 12px;
+}
+.search_bar .hotline {
+    height: 65px;
+    padding-top: 25px;
+    width: 170px;
+}
+.search_bar .hotline a.picture img {
+    background: rgba(0, 0, 0, 0) url(../img/iphones.png) repeat scroll 0 0;
+    display: block;
+    height: 70px;
+    width: 210px;
+    text-indent: -999em;
+}
+.navbar {
+    background: #fff none repeat scroll 0 0;
+    border: medium none;
+    height: 40px;
+    left: -18px;
+    margin: 0;
+    min-height: 40px;
+    padding: 0;
+    position: relative;
+    /*border-bottom: 2px solid #ff3f72;*/
+    background: #37a0db;
+}
+.navbar .nav .lists ul li a:hover{
+        background: #0068b6;
+}
+.navbar .nav {
+    height: 40px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 1200px;
+    z-index: 9;
+}
+.navbar .nav .category {
+    box-shadow: 5px 5px 10px rgba(55, 55, 55, 0.4);
+    background: #ff3f72 none repeat scroll 0 0;
+    display: inline-block;
+    height: 40px;
+    width: 240px;
+}
+.left {
+    float: left;
+}
+.navbar .nav .category h4 {
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 40px;
+    padding-left: 25px;
+    position: relative;
+}
+.navbar .nav .lists {
+    display: inline-block;
+    height: 40px;
+    width: 960px;
+}
+.navbar .nav .lists ul li {
+    color: #fff;
+    float: left;
+    height: 40px;
+    padding-right: 3px;
+    width: 120px;
+}
+.navbar .nav .lists ul li a.active, .navbar .nav .lists ul li a:hover {
+    color: #ff3f72;
+}
+.navbar .nav .lists ul li a {
+    color: #555;
+    display: block;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 120px;
+}
+.navbar .category-menus{
+    background-color:skyblue;
+
+}
+.navbar .category-menus ul > li {
+    border-bottom: 1px dotted #FFFFFF;
+    color: #FFFFFF;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 25px;
+    overflow: hidden;
+}
+.navbar .category-menus ul > li.selected {
+    background: #ffffff none repeat scroll 0 0;
+    width: 250px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 25px;
+    left: -1px;
+    position: relative;
+    z-index: 5;
+}
+.navbar .category-menus ul > li a {
+    font-size: 14px;
+    margin-left: 10px;
+    /*color: #FFFFFF;*/
+}
+.navbar .category-pannel {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 5px 5px 10px rgba(55, 55, 55, 0.4);
+    float: left;
+}
+.navbar .category-pannel .pannel {
+    padding: 0px;
+    width: 960px;
+    min-height: 480px;
+    /*display: none;*/
+}
+.navbar .category-pannel .pannel .content {
+    margin: 0px;
+    padding: 20px 0px;
+    width: 690px;
+    float: left;
+}
+.navbar .category-pannel .pannel .content .tags-bd {
+    clear: both;
+    margin: 0px 0px;
+    width: 690px;
+}
+.navbar .category-pannel .pannel .content .tags-bd h5 {
+    display: inline-block;
+    float: left;
+    line-height: 24px;
+    margin: 5px 0px;
+    padding-right: 10px;
+    text-align: right;
+    width: 120px;
+}
+.navbar .category-pannel .pannel .content .tags-bd h5 a {
+    color: #333;
+    font-size: 14px;
+}
+.navbar .category-pannel .pannel .content .tags-bd p {
+    display: block;
+    float: left;
+    margin: 5px 0px;
+    width: 560px;
+    border-bottom: 1px dotted #cdcdcd;
+}
+.navbar .category-pannel .pannel .content .tags-bd p a {
+    display: inline;
+    color: #999;
+    line-height: 24px;
+    font-size: 12px;
+    border-left: 1px solid #ccc;
+    padding: 0px 10px;
+}
+.navbar .category-pannel .pannel .adverts {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    min-height: 480px;
+    height: 100%;
+    width: 270px;
+    z-index: 9;
+    background-color: #EEEEEE;
+}
+
+/*如此生活*/
+.search_crumb {
+    padding: 15px 0 12px;
+    color: #333;
+    background-color: #FBFBFB;
+    margin: 0 auto;
+    border-bottom: solid 1px #e7e7e7;
+    height: 14px;
+    font-size: 14px;
+}
+.mainBox {
+    width: 1200px;
+    margin: 0 auto;
+}
+.search_crumb ul li {
+    float: left;
+}
+
+ul>li {
+    list-style: none;
+}
+.search_crumb ul li a {
+    margin-right: 3px;
+        color: #37A0DB;
+}
+.listmore {
+    text-align: center;
+    cursor: pointer;
+}
+.search_list_wrap {
+    background: #fff;
+}
+
+.clearfix {
+    display: block;
+    zoom: 1;
+}
+.search_list_head {
+    background: #FFF;
+    height: 34px;
+    font-size: 12px;
+    overflow: hidden;
+    color: #666;
+    z-index: 300;
+    margin: 0 auto;
+    width: 1200px;
+    border: 1px solid #e7e7e7;
+}
+.slh_label {
+    float: left;
+    height: 34px;
+    display: inline;
+    line-height: 34px;
+    width: 64px;
+    text-align: center;
+    margin-left: 8px;
+    color: #333;
+    border-right: 1px solid #e7e3e3;
+}
+
+.search_list_head ul {
+    overflow: hidden;
+    width: 600px;
+    float: left;
+    display: inline;
+}
+.search_list_head ul li {
+    float: left;
+    display: inline;
+    border-right: 1px solid #e7e3e3;
+}
+.search_list_head ul li .selected a {
+    background: #F6F6F6;
+    color: #37A0DB;
+    height: 34px;
+    border: 0;
+    line-height: 34px;
+}
+.search_list_head ul li a {
+    width: 80px;
+    height: 34px;
+    line-height: 34px;
+    float: left;
+    display: inline;
+    background: #FFF;
+    color: #727272;
+    text-decoration: none;
+    text-align: center;
+}
+.head_pagebtn {
+    float: right;
+}
+.head_pagebtn a.dis {
+    color: #ccc;
+    cursor: default;
+}
+
+.head_pagebtn a {
+    float: left;
+    display: inline;
+    padding: 0 10px;
+    height: 20px;
+    margin-top: 7px;
+    margin-right: 15px;
+    background: #fff;
+    line-height: 18px;
+    border: 1px solid #d4d4d4;
+    color: #666;
+    text-decoration: none;
+}
+.head_pageInfo {
+    float: right;
+    display: inline;
+    height: 34px;
+    line-height: 34px;
+    margin-right: 10px;
+}
+.head_pageInfo span {
+    color: #F6AB00;
+    margin-left: 8px;
+}
+.head_pagecount {
+    float: right;
+    display: inline;
+    height: 34px;
+    line-height: 34px;
+    padding-right: 10px;
+}
+.head_pagecount span {
+    color: #F6AB00;
+}
+.pager {
+    color: #666;
+    width: 700px;
+    height: 32px;
+    margin: 20px auto;
+    display: block;
+    overflow: hidden;
+}
+.pager {
+    padding-left: 0;
+    /*margin: 20px 0;*/
+    text-align: center;
+    list-style: none;
+    margin:20px  auto;
+}
+.pager a {
+    display: block;
+    padding: 5px 10px;
+    line-height: 20px;
+    text-align: center;
+    float: left;
+    margin-right: 5px;
+    border: 1px solid #e2e0e0;
+    color: #333;
+}
+.pager .currentpage {
+    background: #F6AB00;
+    color: #fff!important;
+    border: 1px solid #ef8f01;
+}
+.pager span {
+    display: block;
+    padding: 5px;
+    line-height: 20px;
+    text-align: center;
+    color: #666!important;
+    float: left;
+}
+.pager .skippage {
+    width: 35px;
+    text-align: center;
+    float: left;
+}
+
+input[type=password], input[type=text] {
+    height: 30px;
+    text-indent: 2px;
+    width: 300px;
+    background-color: #fff;
+    background-image: none;
+    font-size: 12px;
+    /*border: 1px solid #eee;*/
+}
+.pager .btnpage {
+    height: 30px;
+    background: #37a0db;
+    color: #fff;
+    border: 0;
+}
+.search_last_buy .products_wrap {
+    border: 0;
+    margin-bottom: 0;
+}
+a {
+    text-decoration: none;
+    color: #37A0DB;
+}
+.lastbuy_title {
+    background: #37a0db;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    /*font-family: "寰蒋闆呴粦";*/
+}
+
+/*渲染的部分样式*/
+.products_wrap  li .firstrow {
+    margin-left: 0;
+}
+
+.products_wrap  li .item {
+    float: left;
+}
+.products_wrap li {
+    position: relative;
+    float: left;
+    display: inline;
+    height: 300px;
+    width: 217px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid #f5f5f5;
+}
+.s_l_name {
+    width: 222px;
+    padding: 0 10px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: "瀹嬩綋";
+    height: 36px;
+}
+/*.ziti{
+    font-size: 18px;
+        color: #F6AB00;
+    padding-top:5px;
+}*/
+
+/*底部*/
+.footerdiv {
+    background: #FBFBFB;
+    min-width: 1200px;
+    position: relative;
+    left: -18px;
+    z-index: 600;
+}
+.footer_wrap {
+    padding: 40px 0 10px;
+    width: 100%;
+}
+
+.footer_nav {
+    background: url(https://static.soolife.cn/asset/img/footer.png) -500px 0 no-repeat;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1200px;
+}
+.footer_nav ul li {
+    float: left;
+}
+.footer_nav .footer_nav_first {
+    padding-left: 98px;
+}
+
+.footer_nav ul li dl {
+    margin: 0;
+}
+.footer_nav dl dt {
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px 0;
+}
+.footer_nav dl dd {
+    color: #999;
+    font-size: 12px;
+    line-height: 22px;
+}
+.footer_nav dl dd a {
+    color: #999;
+    text-decoration: none;
+}
+.footerdiv .foot-s {
+    min-width: 1200px;
+    height: 70px;
+    background: #3B87EE;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 20px 0 35px;
+}
+.mainBoxim {
+    width: 1200px!important;
+}
+.footerdiv .foot-s .s1 {
+    width: 338px;
+    background-position: 0 1px;
+}
+
+.footerdiv .foot-s a {
+    float: left;
+    height: 46px;
+    background: url(https://static.soolife.cn/asset/img/footer.png) no-repeat;
+    text-indent: -100%;
+    overflow: hidden;
+}
+
+
+.footerdiv .foot-s .s2 {
+    margin-left: 41px;
+    width: 470px;
+    background-position: 0 -44px;
+}
+.footerdiv .foot-s .s3 {
+    margin-left: 41px;
+    width: 310px;
+    background-position: 0 -92px;
+}
+.footerdiv .footer {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 5px 0 20px;
+}
+.footerdiv .footer p {
+    line-height: 25px;
+    color: #999;
+    /*font-family: "瀹嬩綋";*/
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.footerdiv .footer p a {
+    color: #999;
+}

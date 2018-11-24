@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>详情页</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/xiangqingye.css" />
+
+    <link rel="stylesheet" type="text/css" href="../css/fada.css" />
+     <script type="text/javascript" src="../lib/jquery-3.2.1.js"></script>
+      <script type="text/javascript" src="../js/xiangqingye.js"></script>
+
+     <!-- <script type="text/javascript" src="../lib/jquery-1.7.min.js"></script> -->
+     <!-- <script type="text/javascript" src="../lib/jquery.jqzoom-2.2.js"></script> -->
+  <style type="text/css">
+
+  .detail-info {
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.clearfix {
+    display: block;
+    zoom: 1;
+}
+.mainBoxim {
+    width: 1200px!important;
+}
+.mainBox {
+    width: 1200px;
+    margin: 0 auto;
+}
+.detail_top {
+    width: 929px;
+    float: left;
+    min-height: 505px;
+    background-color: #fff;
+}
+.detail_top .albums {
+    background: #fff;
+}
+
+.albums {
+    float: left;
+    display: inline;
+    width: 400px;
+}
+.albums .jqzoom-div {
+    width: 370px;
+    height: 370px;
+    margin: 15px;
+}
+.albums .jqzoom {
+    overflow: hidden;
+    float: left;
+    display: inline;
+    width: 370px;
+    height: 370px;
+    position: relative;
+    border: none;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+}
+img.lazy {
+    background: url(../img/lazy.gif) center no-repeat;
+    display:inline;
+}
+.albums .albums_control {
+    display: block;
+}
+.albums .albums_control i.icon-angle-left-hover, .albums .albums_control i.icon-angle-left:hover, .albums .albums_control i.icon-angle-right-hover, .albums .albums_control i.icon-angle-right:hover {
+    color: #f6ab00;
+}
+
+.albums .albums_control i.icon-angle-left, .albums .albums_control i.icon-angle-right {
+    color: #ccc;
+    font-size: 40px;
+    float: left;
+    padding: 15px 5px;
+    display: inline-block;
+    margin-top: 8px;
+    cursor: pointer;
+}
+[class^="icon-"], [class*=" icon-"] {
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    margin-top: 0;
+}
+.icon-angle-left:before {
+    content: "\f104";
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    text-decoration: inherit;
+    display: inline-block;
+    speak: none;
+}
+.albums_control .ac_container {
+    position: relative;
+    overflow: hidden;
+    width: 340px;
+    height: 77px;
+    float: left;
+}
+.albums_control .ac_container ul {
+    position: absolute;
+    width: 1000em;
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.albums_control .ac_container ul li {
+    float: left;
+    margin: 0 3px 5px;
+    width: 62px;
+    height: 72px;
+    position: relative;
+}
+.albums-other .albums-number {
+    width: 200px;
+    float: left;
+    color: #666;
+}
+.albums-other .albums-number label {
+    margin: 0 5px;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.albums-other .share {
+    float: right;
+    width: 150px;
+}
+.bshare-custom {
+    font-size: 13px;
+    line-height: 16px !important;
+}
+div.bshare-custom .bsPromo.bsPromo2 {
+    background: url(//static.bshare.cn/frame/images/bshare_promo_sprite.gif) no-repeat;
+    cursor: pointer;
+}
+.product_info .info {
+    width: 529px;
+    float: left;
+    border-left: 1px solid #f5f5f5;
+}
+.detail_top .title {
+    line-height: 150%;
+    position: relative;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.detail_top .title b {
+    color: #37a0db;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.product_info .info .info-count {
+    padding-left: 10px;
+    background: #F7F7F7;
+    position: relative;
+    min-height: 115px;
+    overflow: hidden;
+}
+.product_info .info .price .yen {
+    color: #c00;
+    font-weight: 700;
+    font-size: 16px;
+    font-style: normal;
+}
+.mall_price {
+    color: #c00;
+    font-size: 30px;
+}
+.product_info .info .price .label {
+    color: #0068B6;
+    margin-left: 4px;
+}
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+.product_info .info-count .info-count-rp {
+    display: block;
+}
+.product_info .actnotic-code {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 108px;
+    text-align: center;
+}
+.product_info .actnotic-code .actnotic-code-img {
+    text-align: center;
+    margin: 5px auto 0;
+    width: 90px;
+    height: 90px;
+    padding: 5px;
+    background: #fff;
+}
+.product_info .actnotic-code .actnotic-code-img img {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.product_info .info .product_size {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.product_info .info .product_size .address_box, .product_info .info .product_size .size_box, .product_info .info .product_size .img_box {
+    margin-bottom: 5px;
+}
+
+.product_info .info .product_size .address_box {
+    border-bottom: 1px solid #f5f5f5;
+}
+.product_info .info label.caption {
+    float: left;
+    display: block;
+    color: #666;
+    padding: 5px 0;
+    width: 50px;
+}
+.product_info .info .product_size .address_box .address-city {
+    position: relative;
+    z-index: 50;
+    float: left;
+}
+.product_info .info .address-city .address-city-toggle {
+    border: 1px solid #e8e8e8;
+    line-height: 30px;
+    height: 30px;
+    display: block;
+    padding: 0 5px;
+    top: 0;
+    position: relative;
+    z-index: 6;
+    background: #fff;
+}
+.product_info .info .img_box label.caption {
+    line-height: 42px;
+    padding: 0;
+}
+.product_info .info label.caption {
+    float: left;
+    display: block;
+    color: #666;
+    padding: 5px 0;
+    width: 50px;
+}
+.product_info .info .box-cont {
+    float: left;
+    width: 440px;
+}
+.product_info .info .product_size .img_box span.selected, .product_info .info .product_size .size_box span.selected, .product_info .info .product_size .type_box span.selected {
+    border: 1px solid #f6ab00;
+    background: url(https://static.soolife.cn/asset/img/typechoosicon.jpg) right bottom no-repeat;
+}
+
+.product_info .info .product_size .img_box span {
+    line-height: 42px;
+    cursor: pointer;
+    height: 42px;
+    display: inline-block;
+    padding: 5px 14px;
+}
+.product_info .info label.caption {
+    float: left;
+    display: block;
+    
+}
+.product_info .info .box-cont {
+    float: left;
+    width: 440px;
+}
+.product_info .info .product_size .img_box span, .product_info .info .product_size .size_box span, .product_info .info .product_size .type_box span {
+    color: #666;
+    margin: 0 5px 5px 0;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 14px;
+    border: 1px solid #eee;
+}
+.product_info .info .product_size .number_box {
+    height: 28px;
+    line-height: 28px;
+    margin: 5px 0;
+}
+.buy_number_input {
+    height: 28px;
+    background-position: -5px 0;
+    float: left;
+    width: 105px;
+    display: inline;
+}
+
+.buy_number_input {
+    background: url(https://static.soolife.cn/asset/img/storedetail/num.png) no-repeat;
+}
+.buy_number_input span {
+    display: inline;
+    float: left;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+}
+.buy_number_input input {
+    float: left;
+    display: inline;
+    width: 49px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border: 0;
+    overflow: hidden;
+    background: 0 0;
+    margin-top: 1px;
+    font-size: 14px;
+}
+.product_size .add_cart {
+    padding: 5px 0 20px;
+}
+.product_size .add_cart .btn-buy, .storeinfo .btn-chat {
+    background: #f6ab00;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    display: inline-block;
+}
+.product_size .add_cart .cat-thumbnail {
+    display: inline;
+    position: relative;
+}
+.product_size .add_cart .cat-thumbnail .cat-thumbnail-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: none;
+    border: 2px solid #f6ab00;
+    background-color: #f08080;
+    z-index: 300;
+    position: absolute;
+}
+.product_size .add_cart .cat-thumbnail .cat-thumbnail-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.product_size .add_cart .btn-addcart, .storeinfo .btn-intostore {
+    background: #37A0DB;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+}
+.product_size .add_cart .btn-collect {
+    border: 1px solid #eee;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    display: inline-block;
+}
+.detail-info .storeinfo {
+    padding-top: 20px;
+    border-left: 1px solid #F5F5F5;
+    min-height: 510px;
+    max-width: 270px;
+}
+.storeinfo {
+    float: right;
+    background-color: #fff;
+    border-top: 0;
+}
+.storeinfo .SItitle {
+    border-bottom: 1px solid #f5f5f5;
+    height: 40px;
+}
+.storeinfo .SItitle label {
+    color: #333;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    width: 140px;
+    font-size: 16px;
+}
+.storeinfo .SIinfo {
+    padding-left: 20px;
+}
+.storeinfo .SIinfo .SIinfologo {
+    height: 100px;
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
+    padding-right: 20px;
+}
+.storeinfo .SIinfo .SIinfologo img {
+    max-height: 100px;
+}
+
+img {
+    vertical-align: middle;
+}
+.storeinfo .SIinfo .SIh1 {
+    border-bottom: dashed 1px #efefef;
+    height: 30px;
+    line-height: 30px;
+}
+.storeinfo .SIinfo ul.SIrate li {
+    height: 16px;
+    width: 250px;
+    color: #666;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+.storeinfo .SIinfo ul.SIrate li.buy {
+    height: 45px;
+    text-align: center;
+    padding: 0 25px;
+}
+
+.storeinfo .SIinfo ul.SIrate li {
+    height: 16px;
+    width: 250px;
+    color: #666;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+.storeinfo .box_v1 {
+    background-color: #FFF;
+    margin-bottom: 10px;
+}
+.storeinfo .box_v1 .title {
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+    font-size: 16px;
+    margin: 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+.storeinfo .box_v1 .effect {
+    padding-left: 10px;
+}
+.storeinfo .box_v1 .effect a {
+    color: #666;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    padding: 3px;
+    border: 1px solid #eee;
+}
+  </style>
+   
+</head>
+<body>
+       <div class="header" id="header"> 
+          <div class="main-container clearfix"> 
+             <div class="tips left"> 
+               <label>Hi,欢迎来到如此生活</label> 
+               <a class="nologin login_link" href="denglu.html"> 登录 </a>
+               <em class="separator nologin" href="">|</em> 
+               <a href="zuce.html"> 免费注册 </a>
+               <em class="">|</em> 
+               <a title="关注如此生活 官方微信" href="#"  class="green"><i class="fa fa-weixin fa-lg"><img src="../images/b_3.png" alt="" /></i></a> 
+               <a title="关注如此生活 官方微博" href="#" class="red"><img src="../images/b_2.png"alt="" /><i class="fa fa-weibo  fa-lg"></i></a> 
+            </div> 
+               <div class="nav fr"> 
+                   <div class="dropdown left"> 
+                    <a id="dl_member"  href=""> 我的生活 <span class="caret"></span> </a> 
+                    <ul class="dropdown-menu">
+                     <li><a href="">我的订单</a></li> 
+                     <li><a href="" >星币查询</a></li> 
+                     <li><a href="https://i.soolife.cn/assets/wallet/index.html" >余额查询</a></li> 
+                     <li><a href="https://i.soolife.cn/assets/coupon/index.html" >我的优惠券</a></li> 
+                    </ul> 
+                   </div> 
+                   <em class="separator left">|</em> 
+                   <div class="left"> 
+                    <a  href="https://sop.soolife.cn/">商家入驻</a> 
+                   </div> 
+                   <em class="separator left">|</em> 
+                   <div class="dropdown left"> 
+                    <a id="dl_help" data-target="#" href="https://help.soolife.cn/index.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 帮助中心 <span class="caret"></span> </a> 
+                    <ul class="dropdown-menu" aria-labelledby="dl_help"> 
+                     <li><a href="https://help.soolife.cn/index.html" >帮助首页</a></li> 
+                     <li><a href="https://i.soolife.cn/orders/withdraw/index.html" >售后服务</a></li> 
+                    </ul> 
+                   </div> 
+                   <em class="separator left">|</em> 
+                   <div class="dropdown left"> 
+                    <a id="dl_more" data-target="#" href="https://www.soolife.cn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 更多导航 <span class="caret"></span> </a> 
+                    <ul class="dropdown-menu" aria-labelledby="dl_more"> 
+                     <li><a href="https://www.soolife.cn/index.html" >首页</a></li> 
+                     <li><a href="https://www.soolife.cn/overseas.html" >海外精品</a></li> 
+                    
+                     <li><a href="https://www.soolife.cn/clothes.html" >星范儿</a></li> 
+                     <li><a href="https://www.soolife.cn/discount.html" >星特惠</a></li> 
+                     <li><a href="https://www.soolife.cn/vip.html" >星粉专区</a></li> 
+                    </ul> 
+                   </div> 
+                   <div class="clear"></div> 
+               </div>
+         </div>
+       </div>
+       <!-- 头部部分 -->
+        <div class="search_bar clearfix"> 
+           <div class="main-container clearfix container "> 
+            <div class="logo left"> 
+             <a class="picture" href="" >如此生活</a> 
+            </div> 
+            <div class="control left"> 
+             <!-- 添加店铺 商品 --> 
+             <div class="lj_search"> 
+              <span class="stored">商品</span> 
+              <span class="shoper">店铺</span> 
+             </div> 
+             <div class="box"> 
+              <div class="form-panel"> 
+               <!-- 商品搜索 --> 
+               <fieldset> 
+                <div class="input clearfix"> 
+                 <div class="s-combobox"> 
+                  <div> 
+                   <input type="text" title="请输入搜索文字" placeholder="格力" class="s-combobox-input lj_input" value="" /> 
+                   <input type="hidden" value="" id="hidden" /> 
+                  </div> 
+                  <label class="s-combobox-placeholder"></label> 
+                 </div> 
+                 <button class="button_goods"> 搜索 </button>
+                </div> 
+               </fieldset> 
+               <!-- 店铺搜索 --> 
+              </div> 
+              <div class="form-tags"> 
+               <ul> 
+                <li> <a href="" >山茶油</a> </li> 
+                <li> <a href="" >iphone X</a> </li> 
+                <li> <a href="" >COACH</a> </li> 
+                <li> <a href="" >韩都衣舍</a> </li> 
+                <li> <a href="" >ARTIART不倒杯</a> </li> 
+                <li> <a href="" >清风</a> </li> 
+                <li> <a href="" >三只蚂蚁</a> </li> 
+                <li> <a href="" >卡罗特</a> </li> 
+               </ul> 
+              </div> 
+              <ul class="search_display_list"> 
+              </ul> 
+             </div> 
+            </div> 
+            <div class="hotline fr"> 
+             <a class="picture" href="https://help.soolife.cn/index.html" ><img src="../images/phone.png" height="68" width="215" alt="" /></a> 
+            </div> 
+           </div> 
+        </div> 
+        <div class="clearfix tcenter rellf18 store-ad-img  container" style="background-color:">
+             <img class="lazy" src="https://d2.soolife.cn/images/137e6f02bac7c0a040a6bed090f39d1c.jpg" data-img="https://d2.soolife.cn/images/137e6f02bac7c0a040a6bed090f39d1c.jpg" alt="Oleana旗舰店" style="display: inline;">
+        </div> 
+        <!--nav部分  -->
+        <div class="banner">
+             <div class="nav">
+                <div class="homepage leftflo">
+                    <a href="#">首页</a>
+                </div>
+                <div class="catalog leftflo">
+                    <h4 style="margin-top: 0px;">店铺全部分类</h4>
+                </div>
+                <div class="lists leftflo">
+                    <ul>
+                        <li>
+                        <a href="#" title="Oleana旗舰店 所有宝贝">所有宝贝</a>
+                        </li>
+                        <li>
+                        <a href="#" title="Oleana旗舰店 售后服务">售后服务</a>
+                        </li>
+                        <li class="collect">
+                        <i class="icon-star-empty"><img src="../images/星星.png" alt="" /></i>
+                        <span class="add_focus" data-value="870" data-type="2">关注店铺</span>
+                        <i class="icon-qrcode" data-toggle="modal" data-target="#qrcode" title="点击弹出二维码"></i>
+                        </li>
+                        <li class="coupons">
+                        <span class="coupon">店铺优惠券</span>
+                        <i class="icon-angle-down"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 右边导航条部分 -->
+       <div class="sidebar">
+                    <input type="hidden" name="mem_id" class="mem_id" value="">
+                    <div class="rtbar">
+                        <div class="rtbar-tab rtbar-avatar">
+                            <div class="rtbar-icon">
+                                <img alt="" src="../images/xiaoren.png" class="avatar-female" style="width: 35px;position: relative;left:1px;">
+                            </div>
+                            <div class="rtbar-mbrcenter">
+                                <div class="mui-mbarp-prof-bd" style="display: inline-block; margin: 30px;">
+                                    <div class="mui-mbarp-prof-icon-bd" style="display: inline-block;">
+                                        <img class="mui-mbarp-prof-icon" src="../images/xiaoren.png" style="width: 58px;height: 58px; border-radius: 50%;display:inline-block; " alt="头像">
+                                        <div class="mui-mbarp-prof-icon-edit-mask" style="display: none;">
+                                        </div>
+                                        <div class="mui-mbarp-prof-icon-edit" style="display: none;">
+                                            <a  href="#" onclick="_czc.push(['_trackEvent','我','编辑','已登录','10481210'])">编辑</a>
+                                        </div>
+                                        <span class="mui-mbarp-prof-icon-level" style="display: none;"> 个人 </span>
+                                    </div>
+                                    <div class="mui-mbarp-prof-lv-bd" style="display: inline-block !important;">
+                                        <div class="mui-mbarp-prof-lv-tl " style="display: inline-block !important;">
+                                            <span class="nofonts" style="color: #000 !important;">Hi,</span><a  href="#" class="nologin">请登录</a>
+                                        </div>
+                                        <a  href="#" class="member_title" style="display: none;">                      您是 <span class="mui-mbarp-prof-lv-num"> 个人 </span> 会员</a>
+                                    </div>
+                                    <div class="mui-mbarp-prof-sep">
+                                    </div>
+                                </div>
+                                <div class="rtbar-arrow">
+                                  ◆
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rtbar-tab rtbar-mycart">
+                            <div class="rtbar-icon">
+                                <a href="#" ><i class="fa fa-shopping-cart fa-lg fa-spin"><img src="../images/购物车空.png" height="25" width="25" alt=""></i></a>
+                            </div>
+                            <a href="#" >
+                            <div class="rtbar-hint">
+                                <div class="rtbar-tips">
+                                  我的购物
+                                </div>
+                                <div class="rtbar-arrow">
+                                  ◆
+                                </div>
+                            </div>
+                            <div class="rtbar-title">
+                                购物车
+                            </div>
+                            <div id="amount" class="rtbar-amount">
+                            1
+                            </div>
+                            </a>
+                        </div>
+                        <div class="rtbar-tab rtbar-asset">
+                            <div class="rtbar-icon">
+                                <a href="#"><i class="fa fa-money fa-lg"><img src="../images/爱心.png" height="20" width="20" alt=""></i></a>
+                            </div>
+                            <div class="rtbar-hint">
+                                <div class="rtbar-tips"> 我的资产 </div>
+                                <div class="rtbar-arrow"> ◆ </div>
+                            </div>
+                        </div>
+                        <div class="rtbar-tab rtbar-focus-goods">
+                            <div class="rtbar-icon">
+                                <a href="#"><i class="fa fa-heart-o fa-lg"><img src="../images/星星.png" height="20" width="20" alt=""></i></a>
+                            </div>
+                            <div class="rtbar-hint">
+                                <div class="rtbar-tips"> 关注的商品</div>
+                                <div class="rtbar-arrow"> ◆ </div>
+                            </div>
+                        </div>
+                        <div class="rtbar-tab rtbar-focus-shop">
+                            <div class="rtbar-icon">
+                                <a href="#"><i class="fa fa-star-o fa-lg" style="font-size:18px;"><img src="../images/历史记录.png" height="25" width="25" alt=""></i></a>
+                            </div>
+                            <div class="rtbar-hint">
+                                <div class="rtbar-tips"> 关注的店铺 </div>
+                                <div class="rtbar-arrow"> ◆   </div>
+                            </div>
+                        </div>
+                        <div class="rtbar-tab rtbar-history">
+                            <div class="rtbar-icon">
+                                <a href="#"><i class="fa fa-eye fa-lg"><img src="../images/用户.png" height="20" width="20" alt=""></i></a>
+                            </div>
+                            <div class="rtbar-hint">
+                                <div class="rtbar-tips"> 历史记录 </div>
+                                <div class="rtbar-arrow">◆</div>
+                            </div>
+                        </div>
+                        <div class="rtbar-tab rtbar-suggestion">
+                            <div class="rtbar-icon hkl_user">
+                                <a><i class="fa fa-user fa-lg" style="font-size:18px;"><img src="../images/用户.png" height="20" width="20" alt=""></i></a>
+                            </div>
+                            <div class="rtbar-hint">
+                                <div class="rtbar-tips">客服 </div>
+                                <div class="rtbar-arrow"> ◆</div>
+                            </div>
+                        </div>
+                        <div class="rtbar-tab rtbar-rocket">
+                            <div class="rtbar-icon">
+                                <a href="#"><i class="fa fa-eject fa-lg"><img src="../images/返回顶部.png" height="20" width="20" alt=""></i></a>
+                            </div>
+                            <div class="rtbar-hint">
+                                <div class="rtbar-tips">返回顶部</div>
+                                <div class="rtbar-arrow"></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+       </div>
+       <!-- 中间主要内容 -->
+       <div class="showcase  ">
+           <div class="mainBox search_crumb mainBoxim">
+                <ul class="clearfix">
+                    <li>
+                        <i class="icon-home icon-large"><img src="../images/6.png" height="15" width="20" alt="" /></i>
+                        <a href="https://www.soolife.cn">如此生活</a>
+                        <i class="icon-chevron-right"><img src="../images/表格翻页箭头-右.png" height="12" width="12" alt="" /></i>
+                    </li>
+                    <li>
+                        <a href="" class="dian"></a>
+                        <i class="icon-chevron-right"><img src="../images/表格翻页箭头-右.png" height="12" width="12" alt="" /></i>
+                    </li>
+                    <li>
+                        <a href="" class="dianming"></a>
+                        <img src="../images/表格翻页箭头-右.png" height="12" width="12" alt="" />
+                    </li>
+                </ul>
+            </div>
+<div class="mainBox clearfix detail-info mainBoxim">
+  <div class="detail_top clearfix">
+    <div class="product_info">
+      <!--产品图片-->
+      <div class="albums">
+        <div class="jqzoom-div">
+          <div class="jqzoom">
+            <div class="pic-icon-star">
+              <a class="zhenpin_icon zhenpin_icon8" ></a>
+            </div>
+            <input type="hidden" value="https://img106.soolife.cn/goods/3dccf91786488547823ff93fd67ec346.jpg">
+          
+            <i style="display: inline;" class="zoom_icon"></i>
+          </div>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="albums_control">
+          <i class="icon-angle-left icon-angle-right-hover"></i>
+          <div class="ac_container">
+            <ul class="as_list">
+              <li class="">
+              <span><i class=" icon-caret-up"></i></span>
+              <img width="60" height="60" title="meliya 韩版女圆领甜美淑女欧根纱无袖背心连衣裙 公主裙" alt="meliya 韩版女圆领甜美淑女欧根纱无袖背心连衣裙 公主裙" src="https://img101.soolife.cn/goods/81033b67484d5dd077913c9a75dbe9da.jpg" bigsrc="https://img101.soolife.cn/goods/81033b67484d5dd077913c9a75dbe9da.jpg">
+              </li>
+              <li class="active">
+              <span><i class=" icon-caret-up"></i></span>
+              <img width="60" height="60" title="meliya 韩版女圆领甜美淑女欧根纱无袖背心连衣裙 公主裙" alt="meliya 韩版女圆领甜美淑女欧根纱无袖背心连衣裙 公主裙" src="https://img108.soolife.cn/goods/29eb2e8c6431fdf8cf925644b3e10fb4.jpg" bigsrc="https://img108.soolife.cn/goods/29eb2e8c6431fdf8cf925644b3e10fb4.jpg">
+              </li>
+              <li class="">
+              <span><i class=" icon-caret-up"></i></span>
+              <img width="60" height="60" title="meliya 韩版女圆领甜美淑女欧根纱无袖背心连衣裙 公主裙" alt="meliya 韩版女圆领甜美淑女欧根纱无袖背心连衣裙 公主裙" src="https://img108.soolife.cn/goods/de0e5a81f3801cb71a05a7455248a808.jpg" bigsrc="https://img108.soolife.cn/goods/de0e5a81f3801cb71a05a7455248a808.jpg">
+              </li>
+              <li class="">
+              <span><i class=" icon-caret-up"></i></span>
+              <img width="60" height="60" title="meliya 韩版女圆领甜美淑女欧根纱无袖背心连衣裙 公主裙" alt="meliya 韩版女圆领甜美淑女欧根纱无袖背心连衣裙 公主裙" src="https://img104.soolife.cn/goods/9531db5b7d9cb05f1c0aac0bddbeb571.jpg" bigsrc="https://img104.soolife.cn/goods/9531db5b7d9cb05f1c0aac0bddbeb571.jpg">
+              </li>
+            </ul>
+          </div>
+          <i class="icon-angle-right icon-angle-right-hover"></i>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="albums-other">
+          <div class="albums-number">
+            <label>商品编号</label>7173
+          </div>
+          <div class="share bshare-custom">
+            <div class="bsPromo bsPromo2">
+            </div>
+            <a title="分享到QQ空间" class="bshare-qzone"></a>
+            <a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+            <a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+           <!--  <script type="text/javascript" charset="utf-8" src="https://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+            <script type="text/javascript" charset="utf-8" src="https://static.bshare.cn/b/bshareC0.js"></script> -->
+          </div>
+        </div>
+      </div>
+      <!--产品基本信息-->
+      <div class="info">
+        <input type="hidden" value="7173" class="sku_ids">
+        <h1 class="title"></h1>
+        <br>
+        <label> meliya 韩版女圆领甜美淑女欧根纱无袖背心连衣裙 公主裙</label>
+        <div class="info-count">
+          <p class="price">
+            <em class="yen">¥</em>
+            <span class="mall_price" id="goods_price" data-value="189.00" item-value="0" coin-value="0"></span>
+            <span class="label">如此生活价</span>
+            <span class="info-count-rp">(参考价<del>¥<span id="info_market_price">239.00</span></del>)</span>
+          </p>
+          <!--活动告知-->
+          <div class="acmore" style="display: none;">
+            <label class="acts">优惠<i class="icon-chevron-down"></i></label>
+          </div>
+          <div class="actnotic" style="display: none;">
+          </div>
+          <div class="actnotic-code" style="width:118px;">
+            <div class="actnotic-code-img">
+              <img width="180" alt="移动端扫购更便捷" title="移动端扫购更便捷" src="https://d2.soolife.cn/qrcode/aHR0cHM6Ly9pdGVtLnNvb2xpZmUuY24vbS83MTczLmh0bWw.jpg">
+            </div>
+            <div class="actnotic-code-tit">
+        移动端扫购更便捷
+            </div>
+          </div>
+        </div>
+        <div class="product_size">
+          <div class="clear">
+          </div>
+          <div class="service_box">
+            <label>评价</label>
+            <!-- <label class='tit'></label> -->
+            <label class="tit"><i class="icon-star icon-large"><img src="../images/haoping.png" height="17" width="79" alt="" /></i></label>
+          </div>
+          <div class="clear">
+          </div>
+          <div class="clear">
+          </div>
+          <!-- 运费 -->
+          <div class="address_box" style="height:34px;">
+            <input type="hidden" value="CN310106" class="region_no">
+            <label class="caption">送至</label>
+            <div class="address-city">
+              <a class="address-city-toggle">
+              <em class="address-placement">
+              <span class="address-cityname">上海</span>
+              <span class="address-provincename"></span>
+              <span class="address-citydistrict">静安区</span>
+              <i class="icon-caret-down"></i>
+              </em>
+              </a>
+              <div class="address-city-group" style="display: none;">
+                <a class="address-city-close"><i class="icon-remove"></i></a>
+                <div class="address-city-group-con">
+                  <ul class="address-city-tab-tit clearfix">
+                    <li class="active">
+                    <div>
+                      <a value="CN31">上海市</a><i class="icon-caret-up"></i>
+                    </div>
+                    </li>
+                    <li style="display: none;">
+                    <div>
+                      <a>城市</a><i class="icon-caret-down"></i>
+                    </div>
+                    </li>
+                    <li style="display: none;">
+                    <div>
+                      <a>区或县</a><i class="icon-caret-down"></i>
+                    </div>
+                    </li>
+                  </ul>
+                  <div class="address-city-tab-con">
+                    <div class="address-city-tab-panel pr-panel">
+                      <table>
+                      <tbody>
+                      <tr>
+                        <td>
+                          <a value="CN11" href="#">北京市</a>
+                        </td>
+                        <td>
+                          <a value="CN12" href="#">天津市</a>
+                        </td>
+                        <td>
+                          <a value="CN13" href="#">河北省</a>
+                        </td>
+                        <td>
+                          <a value="CN14" href="#">山西省</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a value="CN15" href="#">内蒙古自治区</a>
+                        </td>
+                        <td>
+                          <a value="CN21" href="#">辽宁省</a>
+                        </td>
+                        <td>
+                          <a value="CN22" href="#">吉林省</a>
+                        </td>
+                        <td>
+                          <a value="CN23" href="#">黑龙江省</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a value="CN31" href="#">上海市</a>
+                        </td>
+                        <td>
+                          <a value="CN32" href="#">江苏省</a>
+                        </td>
+                        <td>
+                          <a value="CN33" href="#">浙江省</a>
+                        </td>
+                        <td>
+                          <a value="CN34" href="#">安徽省</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a value="CN35" href="#">福建省</a>
+                        </td>
+                        <td>
+                          <a value="CN36" href="#">江西省</a>
+                        </td>
+                        <td>
+                          <a value="CN37" href="#">山东省</a>
+                        </td>
+                        <td>
+                          <a value="CN41" href="#">河南省</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a value="CN42" href="#">湖北省</a>
+                        </td>
+                        <td>
+                          <a value="CN43" href="#">湖南省</a>
+                        </td>
+                        <td>
+                          <a value="CN44" href="#">广东省</a>
+                        </td>
+                        <td>
+                          <a value="CN45" href="#">广西壮族自治区</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a value="CN46" href="#">海南省</a>
+                        </td>
+                        <td>
+                          <a value="CN50" href="#">重庆市</a>
+                        </td>
+                        <td>
+                          <a value="CN51" href="#">四川省</a>
+                        </td>
+                        <td>
+                          <a value="CN52" href="#">贵州省</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a value="CN53" href="#">云南省</a>
+                        </td>
+                        <td>
+                          <a value="CN54" href="#">西藏自治区</a>
+                        </td>
+                        <td>
+                          <a value="CN61" href="#">陕西省</a>
+                        </td>
+                        <td>
+                          <a value="CN62" href="#">甘肃省</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a value="CN63" href="#">青海省</a>
+                        </td>
+                        <td>
+                          <a value="CN64" href="#">宁夏回族自治区</a>
+                        </td>
+                        <td>
+                          <a value="CN65" href="#">新疆维吾尔自治区</a>
+                        </td>
+                      </tr>
+                      </tbody>
+                      </table>
+                    </div>
+                    <div class="address-city-tab-panel ct-panel" style="display: none">
+                      <table class="" style="display: table;">
+                      <tbody>
+                      </tbody>
+                      </table>
+                    </div>
+                    <div class="address-city-tab-panel ds-panel" style="display: none">
+                      <table class="" style="display: table;">
+                      <tbody>
+                      </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h6 class="freight" style="visibility: hidden;">运费为<b>0</b>元</h6>
+          </div>
+          <!-- 商品属性 -->
+          <!--规格-->
+          <div class="img_box param "style="height:47px;">
+            <label class="caption">颜色</label>
+            <div class="box-cont" attr="颜色">
+              <span value="浅灰色" type="颜色" class="attr selected">
+              <img class="imagess" width="30" src="https://img105.soolife.cn/goods/3dccf91786488547823ff93fd67ec346.jpg" title="浅灰色" alt="浅灰色">
+              </span>
+            </div>
+            <div class="clear">
+            </div>
+          </div>
+          <!--规格 订单的-->
+          <div class="type_box param clearfix">
+            <label class="caption">尺寸</label>
+            <div class="box-cont" attr="尺寸">
+              <span value="M" type="尺寸" class="attr selected">M</span><!--selected-->
+            </div>
+            <div class="clear">
+            </div>
+          </div>
+          <div class="number_box">
+            <label class="caption">数量</label>
+            <div class="buy_number_input">
+              <span class="decrease_num" title="减少"></span>
+              <input class="buy_number" value="1">
+              <span class="increase_num" title="增加"></span>
+            </div>
+            <div class="clear">
+            </div>
+          </div>
+          <div class="add_cart">
+            <a href="#" class="btn-buy buy_now" title="立即购买" target_id="7173" linkid="0">立即购买</a>
+            <div class="cat-thumbnail">
+              <a href="#" class="btn-addcart" ><i class=" icon-shopping-cart"></i>加入购物车</a>
+            </div>
+            <span class="btn-collect add_focus" title="关注" data-value="7173" data-type="3"><i class="icon-star-empty"></i>关注</span>
+          </div>
+          <!-- <div class="clear">   </div> -->
+       
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="storeinfo">
+    <input type="hidden" value="203" class="storeid">
+    <div class="SItitle">
+      <label>店铺信息</label>
+    </div>
+    <div class="SIinfo">
+      <div class="tcenter SIinfologo">
+        <img src="https://d1.soolife.cn/images/067ca7785fb6d60b321032e32425a7d8.jpg" alt="缘予服饰品牌专营店">
+      </div>
+      <div class="SIh1 clearfix">
+        <span class="leftflo SIh1">卖家：</span>
+        <span><a title="缘予服饰品牌专营店" href="#"> 缘予服饰品牌专营店 </a></span>
+      </div>
+      <div class="clear">
+      </div>
+      <ul class="SIrate">
+        <li>
+        <span>商品包装：</span>
+        <span>
+        <i class="icon-star icon-large"><img src="../images/haoping.png" height="17" width="79" alt="" /></i></span>
+        </li>
+        <li>
+        <span>送货速度：</span>
+        <span>
+        <i class="icon-star icon-large"><img src="../images/haoping.png" height="17" width="79" alt="" /></i></span>
+        </li>
+        <li>
+        <span>配送服务：</span>
+        <span>
+        <i class="icon-star icon-large"><img src="../images/haoping.png" height="17" width="79" alt="" /></i></span>
+        </li>
+        <li class="buy">
+        <a  class="btn-intostore" href="#"><i class="icon-signin"></i>进入店铺</a>
+        <a class="btn-chat" onclick="window.open('https://chat10.live800.com/live800/chatClient/chatbox.jsp?companyID=417063&amp;configID=214181&amp;jid=9075787289')"><i class="icon-comments"></i> 在线客服 </a>
+        </li>
+      </ul>
+      <div class="clear">
+      </div>
+    </div>
+    <div class="box_v1">
+      <div class="title">
+        产品标签
+      </div>
+      <div class="content effect">
+        <a  href="#" title="连衣裙">连衣裙</a>
+        <a  href="#" title="外套">外套</a>
+        <a  href="#" title="半身裙">半身裙</a>
+        <a  href="#" title="批发">批发</a>
+        <a  href="#" title="韩版">韩版</a>
+        <a  href="#" title="女装">女装</a>
+        <a  href="#" title="短裙">短裙</a>
+        <a  href="#" title="衬衫">衬衫</a>
+        <a  href="#" title="吊带">吊带</a>
+        <a  href="#" title="开衫">开衫</a>
+        <a  href="#" title="波西米亚">波西米亚</a>
+        <a  href="#" title="厚外套">厚外套</a>
+        <a  href="#" title="羽绒服">羽绒服</a>
+        <a  href="#" title="薄款羽绒服">薄款羽绒服</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+        </div>
+
+            <!-- 放大镜内容 -->
+    
+</body>
+</html>

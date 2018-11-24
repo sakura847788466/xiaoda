@@ -1,0 +1,375 @@
+.l_register {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei","arial";
+}
+.l_register .header {
+    height: 100px;
+    border-bottom: 2px solid #fe3f71;
+}
+.l_register .w {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.clearfix {
+    display: block;
+    zoom: 1;
+}
+.l_register .header .logo {
+    background: url(http://static.soolife.cn/asset/img/logo.gif) no-repeat;
+}
+
+.l_register .header .logo {
+    width: 200px;
+    height: 60px;
+    float: left;
+    margin-top: 24px;
+}
+.l_register .header .logo-title {
+    float: left;
+    position: relative;
+    top: 50px;
+    right: 10px;
+}
+.l_register img {
+    border: 0px;
+}
+
+img {
+    vertical-align: middle;
+}
+/*==========主题内容=======================*/
+.l_register .middle {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.l_register .font_size {
+    width: 300px;
+    padding-left: 50px;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.l_register .font_size .register {
+    color: #4d4d4d;
+    font-size: 24px;
+}
+
+.l_register .font_size >div {
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+}
+.l_register .font_size .wire_two {
+    height: 20px;
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+.l_register .font_size >div {
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+}
+.l_register .font_size .wire_sb {
+    width: 120px;
+    height: 20px;
+    line-height: 20px;
+    padding-top: 10px;
+    color: #4d4d4d;
+}
+
+.l_register .font_size >div {
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+}
+.l_register a {
+    text-decoration: none;
+    color: #37A0DB;
+}
+.l_register .middle .register-bd {
+    overflow: hidden;
+    padding: 20px 0;
+    font-size: 16px;
+}
+.l_register .middle .register-from {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.l_register .middle .register-bd .register-line {
+    margin-bottom: 20px;
+}
+.l_register .middle .register-bd .register-line dl.line-input-dl {
+    margin: 0;
+}
+.l_register .middle .register-bd .register-line .line-input-dl dt.line-input-tit {
+    float: left;
+    width: 130px;
+    padding-top: 10px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4d4d4d;
+    line-height: 24px;
+}
+.l_register .middle .register-bd .register-line .line-input-dl .line-input-con {
+    position: relative;
+    z-index: 11;
+}
+.l_register input[type="text"] {
+    height: 40px;
+    text-indent: 10px;
+    width: 300px;
+    background-color: #fff;
+    background-image: none;
+    font-size: 14px;
+    border: 1px solid #999;
+}
+.register-line .line-input-dl .line-input-con .t_tag {
+    border: 0px;
+    position: absolute;
+    top: 8px;
+    right: 33px;
+    display: none;
+}
+.l_register .middle .register-bd .register-line {
+    margin-bottom: 20px;
+}
+
+.l_register .text_box_h {
+    height: 40px !important;
+}
+.l_register .middle .register-bd .register-line .line-input-dl dt.line-input-tit {
+    float: left;
+    width: 130px;
+    padding-top: 10px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4d4d4d;
+    line-height: 24px;
+}
+.l_register input[type="text"] {
+    height: 40px;
+    text-indent: 10px;
+    width: 300px;
+    background-color: #fff;
+    background-image: none;
+    font-size: 14px;
+    border: 1px solid #999;
+}
+.l_register .test_again {
+    display: block;
+    float: left;
+    width: 150px !important;
+}
+.l_register .test_word {
+    margin-left: 11px;
+    margin-top: 5px;
+    height: 30px;
+    float: left;
+    width: 90px !important;
+}
+.l_register .middle .register-bd .register-line .line-input-dl dt.line-input-tit {
+    float: left;
+    width: 130px;
+    padding-top: 10px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4d4d4d;
+    line-height: 24px;
+}
+.l_register .register-line .line-input-dl .line-input-con .frame {
+    height: 40px;
+    text-indent: 10px;
+    width: 200px;
+    background-color: #fff;
+    background-image: none;
+    font-size: 14px;
+    border: 1px solid #999;
+}
+.l_register .line-input-con .test_btn {
+    font-size: 13px;
+    width: 95px;
+    position: relative;
+    background: #ff8dab;
+    color: white;
+    border: 0;
+    border-radius: 2px;
+    height: 40px;
+}
+.l_register .under_time {
+    width: 95px;
+    height: 40px;
+    background: #e8e8e8;
+    position: absolute;
+    bottom: 1px;
+    right: 70px;
+    display: none;
+    font-size: 13px;
+    text-align: center;
+    line-height: 40px;
+    color: #7a7a7a;
+    border: 0;
+    border-radius: 2px;
+}
+.l_register .middle .register-bd .register-line {
+    margin-bottom: 20px;
+}
+.l_register .middle .register-bd .register-line .line-input-dl dt.line-input-tit {
+    float: left;
+    width: 130px;
+    padding-top: 10px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4d4d4d;
+    line-height: 24px;
+}
+.l_register input[type="password"] {
+    height: 40px;
+    text-indent: 10px;
+    width: 300px;
+    background-color: #fff;
+    background-image: none;
+    font-size: 14px;
+    border: 1px solid #999;
+}
+.register-line .line-input-dl .line-input-con .t_tag {
+    border: 0px;
+    position: absolute;
+    top: 8px;
+    right: 33px;
+    display: none;
+}
+.l_register .register-line .line-protocol .checkbox {
+    position: relative;
+    top: 2px;
+    right: 6px;
+    display: inline;
+}
+.l_register .middle .register-bd .register-line .line-protocol {
+    margin-left: 145px;
+    margin-top: 33px;
+    position: relative;
+}
+.l_register label {
+    display: inline;
+    font-size: 12px;
+    color: #4d4d4d;
+    position: relative;
+    right: 10px;
+}
+.l_register a {
+    text-decoration: none;
+    color: #37A0DB;
+}
+.l_register .middle #immediately {
+    width: 300px;
+    padding-left: 132px;
+    overflow: visible;
+}
+.l_register .middle .register-bd .register-line .submit_button {
+    background: #fe3f71;
+    width: 300px;
+    display: block;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    height: 40px;
+}
+
+/*========底部============================*/
+.footer_wrap {
+    padding: 40px 0 10px;
+    width: 100%;
+}
+.footer_nav {
+    background: url(https://static.soolife.cn/asset/img/footer.png) -500px 0 no-repeat;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1200px;
+}
+.footer_nav ul li {
+    float: left;
+}
+.footer_nav dl dt {
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px 0;
+}
+.footer_nav dl dd {
+    color: #999;
+    font-size: 12px;
+    line-height: 22px;
+}
+.footer_nav dl dd a {
+    color: #999;
+    text-decoration: none;
+}
+.footer_nav dl dd a:hover{color:yellow;}
+.footer .foot-s {
+    min-width: 1200px;
+    height: 70px;
+    background: #3B87EE;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 20px 0 35px;
+}
+.footer .foot-s .s1 {
+    width: 338px;
+    background-position: 0 1px;
+}
+.footer .foot-s .s2 {
+    margin-left: 41px;
+    width: 470px;
+    background-position: 0 -44px;
+}
+.footer .foot-s .s3 {
+    margin-left: 41px;
+    width: 310px;
+    background-position: 0 -92px;
+}
+.footer .foot-s a {
+    float: left;
+    height: 46px;
+    background: url(https://static.soolife.cn/asset/img/footer.png) no-repeat;
+    text-indent: -100%;
+    overflow: hidden;
+}
+
+.l_register a {
+    text-decoration: none;
+    color: #37A0DB;
+}
+.footer .buttom {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 5px 0 20px;
+}
+.footer .buttom p {
+    line-height: 25px;
+    color: #999;
+    font-family: "瀹嬩綋";
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.footer .buttom p a {
+    color: #999;
+}
+.footer .buttom p a:hover {
+    color:yellow;
+    text-decoration: underline;
+    }

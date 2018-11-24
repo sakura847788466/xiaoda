@@ -1,0 +1,368 @@
+.nav div{
+    position:relative;
+  }
+  .main-container {
+    margin: 0 auto;
+    width: 1200px !important;
+}
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+     .nav div:hover .dropdown-menu{
+          display:block;
+     }
+     a:hover{
+        color:#f6ab00;
+        text-decoration: underline;
+     }
+ul > li {
+    list-style: outside none none;
+}
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+.header .tips em.separator {
+    color: #999;
+    font-style: normal;
+    line-height: 30px;
+}
+
+.search_bar {
+    height: 100px;
+    z-index: 10;
+    left: -18px;
+    position: relative;
+}
+.search_bar .logo {
+    height: 76px;
+    padding-top: 20px;
+    width: 280px;
+    display: inline;
+}
+.search_bar .logo a.picture {
+    background: rgba(0, 0, 0, 0) url(https://static.soolife.cn/asset/img/logo.gif) no-repeat scroll 0 0;
+    display: block;
+    height: 60px;
+    width: 200px;
+    text-indent: -999em;
+}
+.search_bar .control {
+    position: relative;
+    width: 620px;
+    display: inline;
+}
+.left {
+    float: left;
+}
+
+
+#nav3 {
+    box-shadow: none;
+    position: relative;
+    /* left: -18px; */
+    background: #FBFBFB;
+}
+
+#nav3 .mainBox {
+    height: 120px;
+}
+.mainBox {
+    width: 1200px;
+    margin: 0 auto;
+}
+#nav3 .mainBox .nav1 {
+    width: 300px;
+    padding-top: 30px;
+    height: 76px;
+    position: relative;
+}
+.leftflo {
+    float: left;
+}
+#nav3 .mainBox .nav1 a.logo {
+    width: 200px;
+    height: 60px;
+    display: block;
+    background: url(https://static.soolife.cn/asset/img/logo.gif) no-repeat;
+}
+#nav3 .mainBox .nav3 {
+    height: 65px;
+    width: 900px;
+    position: relative;
+    padding-top: 30px;
+}
+.rightflo {
+    float: right;
+}
+.flowstep {
+    position: relative;
+    right: -70px;
+}
+.flowstep ol {
+    overflow: hidden;
+    zoom: 1;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.flowstep li {
+    float: left;
+    width: 170px;
+    list-style: none;
+    text-align: center;
+}
+.flowstep .step-name {
+    padding: 3px 0;
+    font-weight: 700;
+    color: #888;
+}
+.flowstep .step-name a {
+    font-weight: 700;
+    color: #888;
+}
+.flowstep .step-first .step-done .step-no {
+    background-position: 50% -204px;
+}
+
+.flowstep .step-no {
+    height: 34px;
+    line-height: 34px;
+    font-family: 'arial black';
+    color: #fff;
+    font-size: 18px;
+}
+.flowstep .step-no, .flowstep .step-sub-box .step-sub {
+    background: url(https://static.soolife.cn/asset/img/cart/cart.png) 50% -102px no-repeat;
+}
+ 
+
+ /*购物车========================================*/
+
+
+
+
+/*底部推荐=================*/
+.recommend-bottom {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.recommend-bottom .recommend {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+body, div, h3, h4, ul {
+    margin: 0;
+    padding: 0;
+}
+.recommend-bottom .recommend div {
+    float: left;
+    width: 60px;
+    text-align: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.recommend-select {
+    color: #c00;
+    border-bottom: 1px solid #c00;
+}
+.recommend-bottom .recommend div {
+    float: left;
+    width: 60px;
+    text-align: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.recommend-bottom .recommend-content {
+    height: 300px;
+    display: none;
+}
+
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.recommend-content ul li {
+    float: left;
+    padding: 20px;
+    border: 1px solid #dcdcdc;
+}
+.recommend-bottom a {
+    color: #333;
+    text-decoration: none;
+}
+.recommend-bottom .recommend-item{
+    width: 235px;
+}
+.recommend-bottom .recommend-item img {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.recommend-content .recommend-name {
+    width: 235px;
+    height: 22px;
+    line-height: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 0;
+}
+.recommend-content .recommend-price {
+    color: #c00;
+    font-size: 14px;
+}
+.recommend-content .recommend-price {
+    color: #c00;
+    font-size: 14px;
+}
+.recommend-content .recommend-btn {
+    width: 130px;
+    height: 30px;
+    margin: 0 auto;
+    background: #58BC58;
+    padding: 0 20px;
+    margin-top: 15px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.recommend-bottom a {
+    color: #333;
+    text-decoration: none;
+}
+.recommend-content .recommend-btn span {
+    float: left;
+    color: #fff;
+    line-height: 30px;
+}
+
+/*底部样式=================*/
+.footerdiv {
+    background: #FBFBFB;
+    min-width: 1200px;
+    position: relative;
+    left: -18px;
+    z-index: 600;
+}
+.footer_wrap {
+    padding: 40px 0 10px;
+    width: 100%;
+}
+
+.footer_nav {
+    background: url(https://static.soolife.cn/asset/img/footer.png) -500px 0 no-repeat;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1200px;
+}
+.footer_nav ul li {
+    float: left;
+}
+.footer_nav .footer_nav_first {
+    padding-left: 98px;
+}
+
+.footer_nav ul li dl {
+    margin: 0;
+}
+.footer_nav dl dt {
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px 0;
+}
+.footer_nav dl dd {
+    color: #999;
+    font-size: 12px;
+    line-height: 22px;
+}
+.footer_nav dl dd a {
+    color: #999;
+    text-decoration: none;
+}
+.footerdiv .foot-s {
+    min-width: 1200px;
+    height: 70px;
+    background: #3B87EE;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 20px 0 35px;
+}
+.mainBoxim {
+    width: 1200px!important;
+}
+.footerdiv .foot-s .s1 {
+    width: 338px;
+    background-position: 0 1px;
+}
+
+.footerdiv .foot-s a {
+    float: left;
+    height: 46px;
+    background: url(https://static.soolife.cn/asset/img/footer.png) no-repeat;
+    text-indent: -100%;
+    overflow: hidden;
+}
+
+
+.footerdiv .foot-s .s2 {
+    margin-left: 41px;
+    width: 470px;
+    background-position: 0 -44px;
+}
+.footerdiv .foot-s .s3 {
+    margin-left: 41px;
+    width: 310px;
+    background-position: 0 -92px;
+}
+.footerdiv .footer {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 5px 0 20px;
+}
+.footerdiv .footer p {
+    line-height: 25px;
+    color: #999;
+    /*font-family: "瀹嬩綋";*/
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.footerdiv .footer p a {
+    color: #999;
+}
